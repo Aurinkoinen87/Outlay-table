@@ -1,0 +1,56 @@
+*,
+:before,
+:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  font-size: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+tr,
+th,
+td {
+  font-size: inherit;
+  font-weight: inherit;
+}

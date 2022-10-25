@@ -1,0 +1,37 @@
+@import '../scss/vars';
+
+.header {
+  background-color: $bg-secondary;
+  height: 44px;
+  border-bottom: 1px solid $border;
+  padding: 0 24px;
+  > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    height: inherit;
+    color: $text-secondary;
+    > li {
+      cursor: pointer;
+      height: inherit;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .btn_active {
+    color: $white;
+    position: relative;
+    &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: $white;
+    }
+  }
+
+
+  }

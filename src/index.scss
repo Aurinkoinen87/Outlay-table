@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular&display=swap&subset=cyrillic-ext");
+@import './scss/vars';
+@import './scss/reset';
+
+
+
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  color: $white;
+  background-color: $bg-main;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+

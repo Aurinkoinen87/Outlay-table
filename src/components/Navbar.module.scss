@@ -1,0 +1,23 @@
+@import '../scss/vars';
+
+.navbar {
+  min-width: 234px;
+  background-color: $bg-secondary;
+  border-right: 1px solid $border;
+  padding-bottom: 50px;
+  &__header {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border;
+    padding: 0 13px 0 20px;
+  }
+  .text_block {
+    color: $text-secondary;
+    &__sm {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }  
+}

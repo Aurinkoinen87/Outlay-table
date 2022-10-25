@@ -1,0 +1,18 @@
+@import '../scss/vars';
+
+
+.nav_item {
+    > a {
+      padding: 7px 22px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      > span {
+        display: inline-block;
+        margin-right: 17px;
+      }
+    }
+  &_active {
+      background-color: $text-secondary;
+    }
+}
