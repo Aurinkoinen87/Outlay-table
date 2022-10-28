@@ -4,16 +4,24 @@
 
 
 .table_screen {
-  table {
-    border-collapse: collapse; 
-    > caption {
-      background-color: $bg-secondary;
-      height: 44px;
-      border-bottom: 1px solid $border;
+  > div {
+    height: 44px;
+    background-color: $bg-secondary;
+    border-bottom: 1px solid $border;
+    display: flex; 
+    > p {
+      width: 312px;
       font-size: 18px;
       line-height: 21px;
-      border-right: 1px solid $border;  
-    }
+      border-right: 1px solid $border;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } 
+  }
+  table {
+    border-collapse: collapse; 
+    width: 100%;
     > tr {
       border-bottom: 1px solid $border;
       > th {
@@ -21,8 +29,18 @@
         line-height: 18px;
         height: 41px;
       }
+      > td {
+        height: 60px;
+        text-align: center;
+      }
   }
  }
+
 }
 
-
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchData, dataSelector } from '../redux/slices/dataSlice'
 import { AppDispatch } from '../redux/store'
+import SvgSelector from './SvgSelector'
 import styles from './Table.module.scss'
 
 
@@ -40,15 +41,18 @@ export default function Table() {
     dispatch(fetchData())
   },[])
 
+  if (id !== '4') return (<div className={styles.empty}>Empty</div>)
+
+  
   return (
     <div className={styles.table_screen}>
+        <div>
+        <p>Строительно-монтажные работы</p>
+        </div>
       <table>
-
-        <caption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. {id}</caption>
-
         <tr>
           <th>Уровень</th>
-          <th>Наименование работ</th>
+          <th colSpan={2}>Наименование работ</th>
           <th>Основная з/п</th>
           <th>Оборудование</th>
           <th>Накладные расходы</th>
@@ -56,7 +60,15 @@ export default function Table() {
         </tr>
         <tr>
           <td></td>
+          <td><span style={{marginRight: '6px'}}><SvgSelector name={'folder_1'} /></span>Южная строительная площадка</td>
           <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><span style={{marginRight: '6px'}}><SvgSelector name={'folder_2'} /></span>Фундаментальные работы</td>
           <td></td>
           <td></td>
           <td></td>

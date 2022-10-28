@@ -11,7 +11,7 @@ const names: string[] = ['По проекту', 'Объекты', 'МД', 'РТ�
 
 export default function Navbar() {
 
-  let[current, setCurrent] = React.useState<number>(4)
+  let[current, setCurrent] = React.useState<number | null>(null)
 
   return (
     <div className={styles.navbar} >
